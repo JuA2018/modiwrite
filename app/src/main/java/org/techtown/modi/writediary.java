@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class writediary extends AppCompatActivity {
@@ -25,6 +26,8 @@ public class writediary extends AppCompatActivity {
         actionbar.setDisplayUseLogoEnabled(true) ;
         actionbar.setDisplayShowHomeEnabled(true) ;
         actionbar.setTitle("   일기작성");
+
+        Toast.makeText(getApplicationContext(), "앙", Toast.LENGTH_SHORT).show();
 
         setContentView(R.layout.activity_writediary);
 
