@@ -25,16 +25,14 @@
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="170dp" />
 
     <TextView
         android:id="@+id/textsize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="221dp"
-        android:layout_marginEnd="34dp" />
+        android:layout_below="@id/editcontent"
+        android:layout_marginLeft="300dp"/>
 
 </RelativeLayout>

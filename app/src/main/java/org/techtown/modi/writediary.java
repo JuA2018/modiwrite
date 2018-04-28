@@ -41,12 +41,7 @@ public class writediary extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.length() > 10) {
-                    content.setText(str);
-                    content.setSelection(start);
-                } else {
-                    textsize.setText(String.valueOf(s.length()));
-                }
+                textsize.setText(String.valueOf(s.length()));
             }
 
             @Override
