@@ -26,11 +26,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btn = (Button) findViewById(R.id.btn);
+        Button btn = (Button) findViewById(R.id.btnwrite);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), writediary.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnlist = (Button) findViewById(R.id.btnlist);
+        btnlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), cardview.class);
                 startActivity(intent);
             }
         });

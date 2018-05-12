@@ -9,7 +9,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class writediary extends AppCompatActivity {
@@ -27,7 +26,6 @@ public class writediary extends AppCompatActivity {
         actionbar.setDisplayShowHomeEnabled(true) ;
         actionbar.setTitle("   일기작성");
 
-        Toast.makeText(getApplicationContext(), "앙", Toast.LENGTH_SHORT).show();
 
         setContentView(R.layout.activity_writediary);
 
@@ -38,17 +36,17 @@ public class writediary extends AppCompatActivity {
             String str;
 
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) { //입력하기 전
                 str = s.toString();
             }
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            public void onTextChanged(CharSequence s, int start, int before, int count) { //입력되는 텍스트에 변화가 있을 때
                 textsize.setText(String.valueOf(s.length()));
             }
 
             @Override
-            public void afterTextChanged(Editable s) {
+            public void afterTextChanged(Editable s) { //입력이 끝났을 때
 
             }
         });

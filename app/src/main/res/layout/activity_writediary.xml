@@ -9,7 +9,7 @@
 
     <EditText
         android:id="@+id/edittag"
-        android:hint="하루의 기분을 태그로 남겨주세요!"
+        android:hint="하루의 기분을 한 줄로 남겨주세요!"
         android:layout_width="match_parent"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
