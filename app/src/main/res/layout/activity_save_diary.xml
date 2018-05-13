@@ -4,12 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WriteDiary">
+    tools:context=".SaveDiary">
 
-
-    <EditText
-        android:id="@+id/edittag"
-        android:hint="하루의 기분을 한 줄로 남겨주세요!"
+    <TextView
+        android:id="@+id/editfeel"
         android:layout_width="match_parent"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
@@ -18,21 +16,13 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/editcontent"
         android:gravity="left"
-        android:hint="일기를 작성해주세요!"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="170dp" />
-
-    <TextView
-        android:id="@+id/textsize"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/editcontent"
-        android:layout_marginLeft="300dp"/>
 
 </RelativeLayout>

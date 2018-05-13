@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class writediary extends AppCompatActivity {
+public class WriteDiary extends AppCompatActivity {
 
     TextView textsize;
     EditText content;

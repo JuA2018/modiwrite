@@ -16,9 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".signpage" />
-        <activity android:name=".writediary" />
-        <activity android:name=".cardview"></activity>
+        <activity android:name=".SignPage" />
+        <activity android:name=".WriteDiary" />
+        <activity android:name=".DiaryList" />
+        <activity android:name=".SaveDiary"></activity>
     </application>
 
 </manifest>

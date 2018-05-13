@@ -21,16 +21,16 @@ public class MainActivity extends AppCompatActivity {
         signbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), signpage.class);
+                Intent intent = new Intent(getApplicationContext(), SignPage.class);
                 startActivity(intent);
             }
         });
 
-        Button btn = (Button) findViewById(R.id.btnwrite);
-        btn.setOnClickListener(new View.OnClickListener() {
+        Button btnwrite = (Button) findViewById(R.id.btnwrite);
+        btnwrite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), writediary.class);
+                Intent intent = new Intent(getApplicationContext(), WriteDiary.class);
                 startActivity(intent);
             }
         });
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         btnlist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), cardview.class);
+                Intent intent = new Intent(getApplicationContext(), DiaryList.class);
                 startActivity(intent);
             }
         });
